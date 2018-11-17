@@ -26,7 +26,21 @@
 
 	<div class="raindrop"></div>
 	
+	<script src="jquery-3.3.1.min.js"></script>
 	<script src="jquery-ui.min.js"></script>
 	<script src="raindrops.js"></script>
+	<!-- init rain drop -->
+	<script>
+		$(document).ready(function(){
+			"use strict";
+			$(".raindrop").raindrops({
+				color:"#f2f2f2",
+				canvasHeight:50,
+				rippleSpeed:.03,
+				frequency:3,
+				density:.01
+			});
+		});
+	</script>
 </body>
 </html>
